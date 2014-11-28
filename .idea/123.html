@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Подписи для картинок на CSS</title>
+</head>
+<body>
+<style type="text/css">
+    div {
+        position: relative;
+        width: 250px;
+    }
+    img {
+        display: block;
+    }
+    span {
+        display: block;
+        padding: 15px;
+        width: 220px;
+        position: absolute;
+        bottom: 0px;
+        background: #000;
+        opacity: 0.70;
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+        -khtml-opacity: 0.70;
+        -moz-opacity: 0.70;
+        text-align: center;
+        color: #fff;
+        font: 11px/16px Tahoma, Geneva, sans-serif;
+    }
+</style>
+<div>
+    <img src="figure1.png" width="250" height="398" alt="Картинка" />
+    <span>Все дальнейшее далеко выходит за рамки текущего исследования</span>
+</div>
+</body>
+</html>

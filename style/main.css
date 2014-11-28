@@ -1,3 +1,304 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font: 12px Tahoma, sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, figure, label, select, checkbox, input, textarea {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+textarea {
+    vertical-align: top;
+}
+
+:focus {
+    outline: none;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+img, fieldset {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:link, a:visited {
+    font: 12px Tahoma, sans-serif;
+    color: #000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r {
+    float: right !important;
+}
+
+.float-l {
+    float: left !important;
+}
+
+.no-float {
+    float: none !important;
+}
+
+.no-border {
+    border: 0 !important;
+}
+
+.no-bg {
+    background: none !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-display {
+    display: none !important;
+}
+
+.display {
+    display: block !important;
+}
+
+.inline {
+    display: inline !important;
+}
+
+.overflow {
+    overflow: hidden !important;
+}
+
+.align-r {
+    text-align: right !important;
+}
+
+.align-l {
+    text-align: left !important;
+}
+
+.align-c {
+    text-align: center !important;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    width: 100%;
+    font: 16px/24px arial, sans-serif;
+    background: url("../img/main-bg.jpg");
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .wrapper {
-    background: url(../img/main-bg.jpg)
+    width: 780px;
+    margin: 0 auto;
+    padding: 16px 5px;
+    background: #ffffff;
+
+}
+
+.header {
+    height: 194px;
+    background: url("../img/header-bg.jpg") no-repeat;
+}
+
+.logo {
+    display: inline-block;
+    margin: 37px 0 0 32px;
+}
+
+.welcome-title {
+    padding: 6px 12px;
+    font: italic 18px georgia;
+    background: url("../img/welcome-bg.png");
+    color: #D777B7;
+    margin: 13px 39px 0 30px;
+}
+
+.content {
+    font: normal 13px Trebuchet MS sans-serif;
+}
+
+.article-item {
+    margin: 10px 59px 10px 31px;
+}
+
+.article {
+    padding: 0 0 10px;
+    margin: 10px 0;
+    border-bottom: solid 1px #808080;
+}
+
+.article:last-child {
+    border: none;
+}
+
+.article p {
+    color: #4F4F4F;
+    margin: 0 0 10px;
+
+}
+
+.article a {
+    font: 12px Trebuchet MS sans-serif;
+    position: relative;
+    text-decoration: none;
+    color: #4B8BBF;
+    padding: 0 10px 0 0;
+}
+
+.article a:after, .last-news a:after, .popular-articles a:after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin: -2px 0 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 2.5px 0 2.5px 4.3px;
+    border-color: transparent transparent transparent #04b8bb;
+}
+
+.article a:hover:after {
+    display: block;
+}
+
+.popular-section {
+    padding: 6px 12px;
+    font: italic 18px georgia;
+    background: url("../img/popular-bg.png");
+    color: #4B8BBF;
+    margin: 13px 39px 0 30px;
+}
+
+.popular-item {
+    margin: 20px 0 0 31px;
+}
+
+.wedding-accessories {
+    display: inline-block;
+    text-align: center;
+}
+
+.wedding-accessories a {
+    font: 12px Trebuchet MS sans-serif;
+    position: relative;
+    text-decoration: none;
+    color: #4B8BBF;
+}
+
+.last-news {
+    display: inline-block;
+    margin: 20px 10px 50px 31px;
+    background: url("../img/last-news-bg.png");
+    width: 344px;
+    height: 219px;
+}
+
+.news-title, .popular-articles-title {
+    padding: 6px 0 8px 13px;
+    font: italic 18px georgia;
+    color: #4B8BBF;
+}
+
+.news-list, .popular-articles-list {
+    padding: 3px 13px;
+    font: 12px Trebuchet MS sans-serif;
+}
+
+.last-news a, .popular-articles a {
+    font: 12px Trebuchet MS sans-serif;
+    position: relative;
+    text-decoration: none;
+    color: #4B8BBF;
+    padding: 0 10px 0 13px;
+}
+
+.last-news a:after, .popular-articles a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin: -2px 0 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 2.5px 0 2.5px 4.3px;
+    border-color: transparent transparent transparent #04b8bb;
+}
+
+.popular-articles {
+    display: inline-block;
+    margin: 20px 34px 50px 10px;
+    background: url("../img/last-news-bg.png");
+    width: 331px;
+    height: 219px;
+}
+
+.copyright {
+    font: 11px Trebuchet MS sans-serif;
+    color: #D777B7;
+    text-align: center;
+}
+
+.navbar {
+    font: 11px Trebuchet MS sans-serif;
+    color: #949494;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-list {
+    display: inline;
+    padding: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font: 11px Trebuchet MS sans-serif;
+    color: #949494;
 }
