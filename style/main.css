@@ -231,6 +231,7 @@ body {
 }
 
 .last-news {
+    color: #656565;
     display: inline-block;
     margin: 20px 10px 50px 31px;
     background: url("../img/last-news-bg.png");
@@ -272,6 +273,7 @@ body {
 }
 
 .popular-articles {
+    color: #656565;
     display: inline-block;
     margin: 20px 34px 50px 10px;
     background: url("../img/last-news-bg.png");
